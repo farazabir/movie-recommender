@@ -14,7 +14,7 @@ def recommend_movies(movie, movies, similarity):
     recommend_movies_poster = []
     for i in movie_list:
         movie_id = movies.iloc[i[0]].id 
-        recommend_movies.append(movies.iloc[i[0]].title)
+        recommend_movies.append(movies.iloc[i[0]].title )
         recommend_movies_poster.append(get_poster(movie_id))
 
     return recommend_movies, recommend_movies_poster
