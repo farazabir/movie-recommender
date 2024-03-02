@@ -16,4 +16,4 @@ RUN pipenv install --deploy --ignore-pipfile
 EXPOSE 8080
 
 
-ENTRYPOINT ["pipenv", "run", "streamlit", "run", "src/app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+ENTRYPOINT ["pipenv", "run", "streamlit", "run", "src/app.py",  "--server.port=8080", "--server.address=0.0.0.0"]
